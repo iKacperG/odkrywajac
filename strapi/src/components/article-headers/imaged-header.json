@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_article_headers_imaged_headers",
+  "info": {
+    "displayName": "ImagedHeader",
+    "icon": "filter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headerTitle": {
+      "type": "richtext"
+    },
+    "headerImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "currentDate": {
+      "type": "date"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}
